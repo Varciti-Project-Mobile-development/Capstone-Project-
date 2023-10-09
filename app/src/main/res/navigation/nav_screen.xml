@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_screen"
+    app:startDestination="@id/sendMoney_ScreenOneFragment">
+
+    <fragment
+        android:id="@+id/sendMoney_ScreenOneFragment"
+        android:name="com.example.univacitiproject.SendMoney_ScreenOneFragment"
+        android:label="fragment_send_money__screen_one"
+        tools:layout="@layout/fragment_send_money__screen_one" >
+        <action
+            android:id="@+id/action_sendMoney_ScreenOneFragment_to_sendMoneyScreenThreeFragment"
+            app:destination="@id/sendMoneyScreenThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendMoneyScreenThreeFragment"
+        android:name="com.example.univacitiproject.SendMoneyScreenThreeFragment"
+        android:label="fragment_send_money_screen_three"
+        tools:layout="@layout/fragment_send_money_screen_three" />
+</navigation>
